@@ -1,6 +1,6 @@
 [package]
 name = "number-as"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["Magic Len <len@magiclen.org>"]
 repository = "https://github.com/magiclen/number-as"
 homepage = "https://magiclen.org/number-as"

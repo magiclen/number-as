@@ -1,4 +1,4 @@
-Validators
+Number As
 ====================
 
 [![Build Status](https://travis-ci.org/magiclen/number-as.svg?branch=master)](https://travis-ci.org/magiclen/number-as)
