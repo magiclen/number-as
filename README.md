@@ -2,6 +2,7 @@ Validators
 ====================
 
 [![Build Status](https://travis-ci.org/magiclen/number-as.svg?branch=master)](https://travis-ci.org/magiclen/number-as)
+[![Build status](https://ci.appveyor.com/api/projects/status/v7knqgroqwnf4r2r/branch/master?svg=true)](https://ci.appveyor.com/project/magiclen/number-as/branch/master)
 
 **Use** the trait `NumberAs` in the current scope to let all primitive number types have a `number_as` method.
 
