@@ -1,0 +1,17 @@
+[package]
+name = "number-as"
+version = "1.0.0"
+authors = ["Magic Len <len@magiclen.org>"]
+repository = "https://github.com/magiclen/number-as"
+homepage = "https://magiclen.org/number-as"
+keywords = ["primitive", "number", "into", "from", "as"]
+categories = ["value-formatting"]
+description= "Extend primitive number types to make them have a `number_as` method."
+readme = "README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "magiclen/number-as", branch = "master" }
+appveyor = { repository = "magiclen/number-as", branch = "master", service = "github" }
+
+[dependencies]
