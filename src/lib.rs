@@ -38,6 +38,8 @@ assert_eq!(40i32, add(5u8, 35i16));
 ```
 */
 
+#![no_std]
+
 pub trait NumberAs<T>: Sized {
     fn number_as(self) -> T;
 }
