@@ -28,7 +28,7 @@ extern crate number_as;
 
 use number_as::{Number, NumberAs};
 
-fn add<T, J, K>(a: T, b: J) -> K where T: Number, J: Number, K: Number, i128: number_as::NumberAs<K> {
+fn add<T, J, K>(a: T, b: J) -> K where T: Number, J: Number, K: Number, i128: NumberAs<K> {
     let a: i128 = a.number_as();
     let b: i128 = b.number_as();
 
