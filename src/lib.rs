@@ -45,17 +45,17 @@ pub trait NumberAs<T>: Sized {
 }
 
 macro_rules! number_as_impl {
-    ( $from:ty, $to:ty ) => {
+    ($from:ty, $to:ty) => {
         impl NumberAs<$to> for $from {
             fn number_as(self) -> $to {
                 self as $to
             }
         }
-    }
+    };
 }
 
 macro_rules! number_as_batch {
-    ( $from:ty ) => {
+    ($from:ty) => {
         number_as_impl!($from, u8);
         number_as_impl!($from, u16);
         number_as_impl!($from, u32);
@@ -70,7 +70,7 @@ macro_rules! number_as_batch {
         number_as_impl!($from, isize);
         number_as_impl!($from, f32);
         number_as_impl!($from, f64);
-    }
+    };
 }
 
 number_as_batch!(u8);
@@ -90,14 +90,27 @@ number_as_batch!(isize);
 number_as_batch!(f32);
 number_as_batch!(f64);
 
-pub trait Number: NumberAs<u8> + NumberAs<u16> + NumberAs<u32> + NumberAs<u64> + NumberAs<u128> + NumberAs<usize>
-+ NumberAs<i8> + NumberAs<i16> + NumberAs<i32> + NumberAs<i64> + NumberAs<i128> + NumberAs<isize>
-+ NumberAs<f32> + NumberAs<f64> {}
+pub trait Number:
+    NumberAs<u8>
+    + NumberAs<u16>
+    + NumberAs<u32>
+    + NumberAs<u64>
+    + NumberAs<u128>
+    + NumberAs<usize>
+    + NumberAs<i8>
+    + NumberAs<i16>
+    + NumberAs<i32>
+    + NumberAs<i64>
+    + NumberAs<i128>
+    + NumberAs<isize>
+    + NumberAs<f32>
+    + NumberAs<f64> {
+}
 
 macro_rules! number_impl {
-    ( $t:ty ) => {
-        impl Number for $t { }
-    }
+    ($t:ty) => {
+        impl Number for $t {}
+    };
 }
 
 number_impl!(u8);

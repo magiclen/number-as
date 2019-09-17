@@ -3,7 +3,7 @@ extern crate number_as;
 use number_as::NumberAs;
 
 macro_rules! number_as_batch_test {
-    ( $from:expr ) => {
+    ($from:expr) => {
         let _a: u8 = $from.number_as();
         let _a: u16 = $from.number_as();
         let _a: u32 = $from.number_as();
@@ -18,7 +18,7 @@ macro_rules! number_as_batch_test {
         let _a: isize = $from.number_as();
         let _a: f32 = $from.number_as();
         let _a: f64 = $from.number_as();
-    }
+    };
 }
 
 #[test]
