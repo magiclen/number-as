@@ -1,6 +1,6 @@
 [package]
 name = "number-as"
-version = "1.0.7"
+version = "1.0.9"
 authors = ["Magic Len <len@magiclen.org>"]
 edition = "2018"
 repository = "https://github.com/magiclen/number-as"
@@ -11,9 +11,5 @@ description = "Extend primitive number types to make them have a `number_as` met
 readme = "README.md"
 license = "MIT"
 include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]
-
-[badges.travis-ci]
-repository = "magiclen/number-as"
-branch = "master"
 
 [dependencies]

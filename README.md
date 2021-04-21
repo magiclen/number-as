@@ -1,7 +1,7 @@
 Number As
 ====================
 
-[![Build Status](https://travis-ci.org/magiclen/number-as.svg?branch=master)](https://travis-ci.org/magiclen/number-as)
+[![CI](https://github.com/magiclen/number-as/actions/workflows/ci.yml/badge.svg)](https://github.com/magiclen/number-as/actions/workflows/ci.yml)
 
 **Use** the trait `NumberAs` in the current scope to let all primitive number types have a `number_as` method.
 
