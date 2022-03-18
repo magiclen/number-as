@@ -1,8 +1,8 @@
 [package]
 name = "number-as"
-version = "1.0.9"
+version = "1.0.10"
 authors = ["Magic Len <len@magiclen.org>"]
-edition = "2018"
+edition = "2021"
 repository = "https://github.com/magiclen/number-as"
 homepage = "https://magiclen.org/number-as"
 keywords = ["primitive", "number", "into", "from", "as"]

@@ -4,8 +4,6 @@
 **Use** the trait `NumberAs` in the current scope to let all primitive number types have a `number_as` method.
 
 ```rust
-extern crate number_as;
-
 use number_as::NumberAs;
 
 let a: i32 = 2u16.number_as();
@@ -21,8 +19,6 @@ All implements for the `NumberAs` trait can be considered as a whole **Primitive
 you can use the `Number` trait as a trait bound.
 
 ```rust
-extern crate number_as;
-
 use number_as::{Number, NumberAs};
 
 fn add<T, J, K>(a: T, b: J) -> K where T: Number, J: Number, K: Number, i128: NumberAs<K> {

@@ -1,5 +1,3 @@
-extern crate number_as;
-
 use number_as::NumberAs;
 
 macro_rules! number_as_batch_test {
