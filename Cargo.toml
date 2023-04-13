@@ -9,7 +9,6 @@ homepage = "https://magiclen.org/number-as"
 keywords = ["primitive", "number", "into", "from", "as"]
 categories = ["no-std"]
 description = "Extend primitive number types to make them have a `number_as` method."
-readme = "README.md"
 license = "MIT"
 include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]
 
