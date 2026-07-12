@@ -3,6 +3,10 @@ Number As
 
 [![CI](https://github.com/magiclen/number-as/actions/workflows/ci.yml/badge.svg)](https://github.com/magiclen/number-as/actions/workflows/ci.yml)
 
+This crate was deprecated, use the `num_traits` crate or the `TryFrom` trait instead.
+
+-----
+
 **Use** the trait `NumberAs` in the current scope to let all primitive number types have a `number_as` method.
 
 ```rust
